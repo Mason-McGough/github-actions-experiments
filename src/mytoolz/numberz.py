@@ -1,14 +1,14 @@
-def is_number(x):
-    """Check if x is a number.
+from typing import Any
 
-    Parameters
-    ----------
-    x : object
-        Object to check.
 
-    Returns
-    -------
-    bool
+def is_number(x: Any) -> bool:
+    """
+    Check if x is a number.
+
+    Args:
+        x: Object to check.
+
+    Returns:
         True if x is a number, False otherwise.
 
     """
