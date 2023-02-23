@@ -29,4 +29,4 @@ def test_is_number(number, expected):
     """Test is_number."""
     assert numberz.is_number(number) == expected
 
-# Will this line offend flake8? Let's find out! ----------------------------------------------------------------------------
+# Will this line offend flake8? Let's find out! --------------------------------------------------
