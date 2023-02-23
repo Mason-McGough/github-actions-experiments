@@ -1,0 +1,8 @@
+# Testing
+pytest>=6.2.5
+# Linting
+flake8>=4.0.1
+# Documentation
+sphinx
+myst-parser
+sphinx-rtd-theme
