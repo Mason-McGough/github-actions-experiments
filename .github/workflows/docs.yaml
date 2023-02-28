@@ -19,9 +19,10 @@ jobs:
       - name: Build documentation
         run: |
           sphinx-build -b html docs/ gh-pages
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: gh-pages
-          directory: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Compress docs to gzip
+        run: |
+          tar -czf github-pages gh-pages
+      - name: Upload docs
+        uses: actions/upload-pages-artifact@v1
+      - name: Deploy pages
+        uses: actions:deploy-pages@v1
