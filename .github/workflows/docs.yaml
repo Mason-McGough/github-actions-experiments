@@ -17,7 +17,8 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r docs/requirements.txt
       - name: Build documentation
-        sphinx-build -b html docs/ _build/
+        run: |
+          sphinx-build -b html docs/ _build/
       - name: Push changes
         uses: ad-m/github-push-action@main
         with:
