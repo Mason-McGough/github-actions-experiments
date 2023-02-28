@@ -1,0 +1,2 @@
+This folder must exist for static HTML files.
+See `html_static_path` in conf.py.
